@@ -1,0 +1,810 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet href="/VocabV2/skosrdf2html.xsl" type="text/xsl" media="screen"?><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:dc="http://purl.org/dc/terms/" xmlns:dce="http://purl.org/dc/elements/1.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:grg="http://www.isotc211.org/schemas/grg/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:void="http://rdfs.org/ns/void#" xmlns:pav="http://purl.org/pav/">
+<skos:Collection rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/">
+<skos:prefLabel>ICES Platform Codes</skos:prefLabel>
+<dc:title>ICES Platform Codes</dc:title>
+<skos:altLabel>ICES Platforms</skos:altLabel>
+<dc:alternative>ICES Platforms</dc:alternative>
+<dc:description>Identifiers and metadata for platform instances (combinations of names and physical entities such as hulls or airframes).</dc:description>
+<dc:date>2019-01-05 02:00:06.0</dc:date>
+<owl:versionInfo>810</owl:versionInfo>
+<grg:RE_RegisterManager>British Oceanographic Data Centre</grg:RE_RegisterManager>
+<dc:publisher>Natural Environment Research Council</dc:publisher>
+<dc:creator>International Council for the Exploration of the Sea</dc:creator>
+<grg:RE_RegisterOwner>International Council for the Exploration of the Sea</grg:RE_RegisterOwner>
+<rdfs:comment>International organisation with a mission to advance the scientific capacity to give advice on human activities affecting, and affected by, marine ecosystems. Secretariat is located in Copenhagen.</rdfs:comment>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/90UW/">
+<dc:identifier>SDN:C17::90UW</dc:identifier>
+<dce:identifier>SDN:C17::90UW</dce:identifier>
+<dc:date>2012-02-07 09:42:36.0</dc:date>
+<skos:notation>SDN:C17::90UW</skos:notation>
+<skos:prefLabel xml:lang="en">11TH Pjatiletka</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">OCL REQUEST</skos:definition>
+<owl:versionInfo>2</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/90UW/2/"/>
+<pav:version>2</pav:version>
+<pav:authoredOn>2012-02-07 09:42:36.0</pav:authoredOn>
+<skos:note xml:lang="en">deprecated</skos:note>
+<owl:deprecated>true</owl:deprecated>
+<dc:isReplacedBy rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/ZZ99/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/90TU/">
+<dc:identifier>SDN:C17::90TU</dc:identifier>
+<dce:identifier>SDN:C17::90TU</dce:identifier>
+<dc:date>2012-02-07 09:42:36.0</dc:date>
+<skos:notation>SDN:C17::90TU</skos:notation>
+<skos:prefLabel xml:lang="en">1500 Let Kiyevu</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">LYFB</skos:definition>
+<owl:versionInfo>2</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/90TU/2/"/>
+<pav:version>2</pav:version>
+<pav:authoredOn>2012-02-07 09:42:36.0</pav:authoredOn>
+<skos:note xml:lang="en">deprecated</skos:note>
+<owl:deprecated>true</owl:deprecated>
+<dc:isReplacedBy rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/ZZ99/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/3234/">
+<dc:identifier>SDN:C17::3234</dc:identifier>
+<dce:identifier>SDN:C17::3234</dce:identifier>
+<dc:date>2015-12-16 13:28:25.0</dc:date>
+<skos:notation>SDN:C17::3234</skos:notation>
+<skos:prefLabel xml:lang="en">2nd Lt. John P.Bobo</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "naval vessel",
+  "IMO": "8219384",
+  "callsign": "NBOB"
+}</skos:definition>
+<owl:versionInfo>4</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/3234/4/"/>
+<pav:version>4</pav:version>
+<pav:authoredOn>2015-12-16 13:28:25.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/39/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/26XG/">
+<dc:identifier>SDN:C17::26XG</dc:identifier>
+<dce:identifier>SDN:C17::26XG</dce:identifier>
+<dc:date>2015-10-06 12:52:51.0</dc:date>
+<skos:notation>SDN:C17::26XG</skos:notation>
+<skos:prefLabel xml:lang="en">A. P. Moller</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Denmark",
+  "platformclass": "vessel of opportunity",
+  "callsign": "OVYQ2",
+  "MMSI": "219882000",
+  "IMO": "9214898",
+  "length": "347",
+  "built": "2000",
+  "notes": "Container ships",
+  "JCOMMOPs_Recruitment_Date": "2012-03-05"
+}</skos:definition>
+<owl:versionInfo>3</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/26XG/3/"/>
+<pav:version>3</pav:version>
+<pav:authoredOn>2015-10-06 12:52:51.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/07AL/">
+<dc:identifier>SDN:C17::07AL</dc:identifier>
+<dce:identifier>SDN:C17::07AL</dce:identifier>
+<dc:date>2011-12-06 13:28:05.0</dc:date>
+<skos:notation>SDN:C17::07AL</skos:notation>
+<skos:prefLabel xml:lang="en">A. V. Humboldt</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "IMO": "6711883",
+  "title": "FS",
+  "country": "German Democratic Republic",
+  "platformclass": "research vessel",
+  "callsign": "Y3CW",
+  "commissioned": "1970-05-01",
+  "decommissioned": "1990-10-02",
+  "length": "64.23",
+  "built": "1967",
+  "notes": "Operated by Originally from Peenewerft Wolgast as a trawler, converted 1970 as research vessel for the Institute of Marine Research in Warnemünde, fully reconstructed 1977/8 as oceanographic research vessel. 1990 owned by the state of Mecklenburg-Vorpommern under operation of the IOW Warnemünde. After decommissioned in 2004, she continued as Franklin, after 2007 renamed A.v. Humboldt by Eagle Shipping Ltd. BRZ:1249, port of registry: Rostock."
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/07AL/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2011-12-06 13:28:05.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/31/"/>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L19/current/SDNKG04/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/06VH/">
+<dc:identifier>SDN:C17::06VH</dc:identifier>
+<dce:identifier>SDN:C17::06VH</dce:identifier>
+<dc:date>2011-12-06 13:28:05.0</dc:date>
+<skos:notation>SDN:C17::06VH</skos:notation>
+<skos:prefLabel xml:lang="en">A. V. Humboldt</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "IMO": "6711883",
+  "title": "FS",
+  "country": "Germany",
+  "platformclass": "research vessel",
+  "callsign": "Y3CW",
+  "commissioned": "1990-10-03",
+  "decommissioned": "2004-09-15",
+  "length": "64.23",
+  "built": "1967",
+  "notes": "Operated by Originally from Peenewerft Wolgast as a trawler, converted 1970 as research vessel for the Institute of Marine Research in Warnemünde, fully reconstructed 1977/8 as oceanographic research vessel. 1990 owned by the state of Mecklenburg-Vorpommern under operation of the IOW Warnemünde. After decommissioned in 2004, she continued as Franklin, after 2007 renamed A.v. Humboldt by Eagle Shipping Ltd. BRZ:1249, port of registry: Rostock."
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/06VH/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2011-12-06 13:28:05.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/31/"/>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L19/current/SDNKG04/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/54YF/">
+<dc:identifier>SDN:C17::54YF</dc:identifier>
+<dce:identifier>SDN:C17::54YF</dce:identifier>
+<dc:date>2018-02-08 09:27:41.0</dc:date>
+<skos:notation>SDN:C17::54YF</skos:notation>
+<skos:prefLabel xml:lang="en">AM Tubarao</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Liberia",
+  "platformclass": "vessel of opportunity",
+  "callsign": "A8ZA9",
+  "MMSI": "636015171",
+  "IMO": "9593488",
+  "commissioned": "2011",
+  "length": "229",
+  "built": "2011",
+  "JCOMMOPs_Recruitment_Date": "2012-09-28",
+  "notes": "Bulk Carriers. Built as AM TUBARAO"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/54YF/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-02-08 09:27:41.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/546I/">
+<dc:identifier>SDN:C17::546I</dc:identifier>
+<dce:identifier>SDN:C17::546I</dce:identifier>
+<dc:date>2017-07-21 12:37:52.0</dc:date>
+<skos:notation>SDN:C17::546I</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Echuca</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Liberia",
+  "platformclass": "vessel of opportunity",
+  "callsign": "A8ET3",
+  "MMSI": "636090756",
+  "IMO": "9155391",
+  "commissioned": "2015",
+  "length": "176",
+  "built": "2003",
+  "previous_name": "Hansa Augustenburg",
+  "JCOMMOPs_Recruitment_Date": "2015-04-28",
+  "notes": "Container ships. Built as HANSA AUGUSTENBURG, became MAERSK VILNIUS in 2003, became HANSA AUGUSTENBURG in 2007, became ANL ECHUCA in 2015"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/546I/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2017-07-21 12:37:52.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/54S6/">
+<dc:identifier>SDN:C17::54S6</dc:identifier>
+<dce:identifier>SDN:C17::54S6</dce:identifier>
+<dc:date>2017-07-21 12:37:52.0</dc:date>
+<skos:notation>SDN:C17::54S6</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Elanora</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Liberia",
+  "platformclass": "vessel of opportunity",
+  "callsign": "A8LO9",
+  "MMSI": "636091287",
+  "IMO": "9334820",
+  "commissioned": "2015",
+  "length": "175.6",
+  "built": "2007",
+  "previous_name": "Hansa Coburg",
+  "JCOMMOPs_Recruitment_Date": "2015-05-15",
+  "notes": "Container ships. Launched as HANSA COBURG, completed as Niledutch Asia in 2007, became HANSA COBURG in 2010, became ANL ELANORA in 2015"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/54S6/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2017-07-21 12:37:52.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/54WM/">
+<dc:identifier>SDN:C17::54WM</dc:identifier>
+<dce:identifier>SDN:C17::54WM</dce:identifier>
+<dc:date>2018-08-08 12:07:50.0</dc:date>
+<skos:notation>SDN:C17::54WM</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Kiewa</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Liberia",
+  "platformclass": "vessel of opportunity",
+  "callsign": "D5GB5",
+  "MMSI": "636092575",
+  "IMO": "9225407",
+  "commissioned": "2014",
+  "decommissioned": "2014-11-23",
+  "length": "211",
+  "built": "2000",
+  "previous_name": "Alexandra P.",
+  "JCOMMOPs_Recruitment_Date": "2002-01-18",
+  "notes": "Container ships. Built as Alexandra, became MAERSK PLYMOUTH in 2000, became ALEXANDRA P. in 2006, became OOCL KEELUNG in 2007, became ALEXANDRA P. in 2009, became KOTA PERABU in 2010, became ALEXANDRA P. in 2011, became ANL KIEWA in 2014 but date of flag change from Germany to Liberia is not known, became ALEXANDRA in 2014, became ALEX in 2016 and broken up in 2016"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/54WM/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-08-08 12:07:50.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/74NA/">
+<dc:identifier>SDN:C17::74NA</dc:identifier>
+<dce:identifier>SDN:C17::74NA</dce:identifier>
+<dc:date>2018-01-22 09:46:26.0</dc:date>
+<skos:notation>SDN:C17::74NA</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Wangaratta</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United Kingdom",
+  "platformclass": "vessel of opportunity",
+  "callsign": "2ALD3",
+  "IMO": "9334167",
+  "commissioned": "2008-04",
+  "length": "260",
+  "built": "2008",
+  "previous_name": "Sui An Rickmers",
+  "JCOMMOPs_Recruitment_Date": "2008-07-03",
+  "notes": "Container ships. Built as SUI AN RICKMERS, became ANL WANGARATTA in April 2008"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/74NA/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 09:46:26.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/5438/">
+<dc:identifier>SDN:C17::5438</dc:identifier>
+<dce:identifier>SDN:C17::5438</dce:identifier>
+<dc:date>2018-01-22 09:46:26.0</dc:date>
+<skos:notation>SDN:C17::5438</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Waratah</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Liberia",
+  "platformclass": "vessel of opportunity",
+  "callsign": "A8IY2",
+  "MMSI": "636091052",
+  "IMO": "9326794",
+  "commissioned": "2014",
+  "length": "295",
+  "built": "2005",
+  "previous_name": "Santa Placida",
+  "JCOMMOPs_Recruitment_Date": "2005-10-17",
+  "notes": "Container ships. Built as SANTA PLACIDA in 2005, became P&amp;O NEDLLOYD DOHA in 2005, became MAERSK DIEPPE in 2005, became SANTA PLACIDA in 2013, became ANL WARATAH in 2014"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/5438/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 09:46:26.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/SI8D/">
+<dc:identifier>SDN:C17::SI8D</dc:identifier>
+<dce:identifier>SDN:C17::SI8D</dce:identifier>
+<dc:date>2018-01-22 09:46:26.0</dc:date>
+<skos:notation>SDN:C17::SI8D</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Warrain</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Singapore",
+  "platformclass": "vessel of opportunity",
+  "callsign": "9V7548",
+  "MMSI": "565997000",
+  "IMO": "9324863",
+  "commissioned": "2008",
+  "decommissioned": "2015",
+  "length": "261",
+  "built": "2007",
+  "previous_name": "CMA CGM Purple",
+  "JCOMMOPs_Recruitment_Date": "2008-06-07",
+  "notes": "Container ships. Built as LARANNA RICKMERS, renamed CMA CGM PURPLE in 2007, became ANL WARRAIN in 2008, became LARANNA RICKMERS in 2015, became NAVIOS VERDE in 2017"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/SI8D/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 09:46:26.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/MHNS/">
+<dc:identifier>SDN:C17::MHNS</dc:identifier>
+<dce:identifier>SDN:C17::MHNS</dce:identifier>
+<dc:date>2018-01-22 09:46:26.0</dc:date>
+<skos:notation>SDN:C17::MHNS</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Warringa</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Marshall Islands",
+  "platformclass": "vessel of opportunity",
+  "callsign": "V7LF2",
+  "MMSI": "538002734",
+  "IMO": "9324837",
+  "commissioned": "2007",
+  "length": "247",
+  "built": "2007",
+  "previous_name": "Vicki Rickmers",
+  "JCOMMOPs_Recruitment_Date": "2007-05-01",
+  "notes": "Container ships. Built as VICKI RICKMERS, renamed ANL WARRINGA in 2007"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/MHNS/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 09:46:26.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/MHV4/">
+<dc:identifier>SDN:C17::MHV4</dc:identifier>
+<dce:identifier>SDN:C17::MHV4</dce:identifier>
+<dc:date>2018-01-22 09:46:26.0</dc:date>
+<skos:notation>SDN:C17::MHV4</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Windarra</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Marshall Islands",
+  "platformclass": "vessel of opportunity",
+  "callsign": "V7LE9",
+  "MMSI": "538002733",
+  "IMO": "9324849",
+  "commissioned": "2007",
+  "decommissioned": "2015-12-31",
+  "length": "260",
+  "built": "2007",
+  "previous_name": "Maja Rickmers",
+  "JCOMMOPs_Recruitment_Date": "2007-06-12",
+  "notes": "Container ships. Built as MAJA RICKMERS, became ANL WINDARRA in 2007"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/MHV4/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 09:46:26.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/748R/">
+<dc:identifier>SDN:C17::748R</dc:identifier>
+<dce:identifier>SDN:C17::748R</dce:identifier>
+<dc:date>2018-01-22 11:22:40.0</dc:date>
+<skos:notation>SDN:C17::748R</skos:notation>
+<skos:prefLabel xml:lang="en">ANL Wyong</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United Kingdom",
+  "platformclass": "vessel of opportunity",
+  "callsign": "2AJU5",
+  "MMSI": "235060306",
+  "IMO": "9334155",
+  "commissioned": "2008",
+  "length": "260",
+  "built": "2008",
+  "previous_name": "Olympia Rickmers",
+  "JCOMMOPs_Recruitment_Date": "2008-05-17",
+  "notes": "Container ships. Built as OLYMPIA RICKMERS became ANL WYONG in 2008"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/748R/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 11:22:40.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/335C/">
+<dc:identifier>SDN:C17::335C</dc:identifier>
+<dce:identifier>SDN:C17::335C</dce:identifier>
+<dc:date>2018-04-11 15:49:28.0</dc:date>
+<skos:notation>SDN:C17::335C</skos:notation>
+<skos:prefLabel xml:lang="en">APL Agate</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "vessel of opportunity",
+  "callsign": "WDE8265",
+  "MMSI": "367403460",
+  "IMO": "9139713",
+  "commissioned": "2009",
+  "decommissioned": "2016",
+  "length": "275",
+  "built": "1997",
+  "previous_name": "MOL Freedom",
+  "JCOMMOPs_Recruitment_Date": "2009-06-15",
+  "notes": "Container ships. Built as NOL AGATE, became APL AGATE in 2000, became MOL FREEDOM in 2008, became APL AGATE in 2009, became GALE in 2016. Disposed in 2017"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/335C/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-04-11 15:49:28.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/PAH3/">
+<dc:identifier>SDN:C17::PAH3</dc:identifier>
+<dce:identifier>SDN:C17::PAH3</dce:identifier>
+<dc:date>2015-11-10 12:24:35.0</dc:date>
+<skos:notation>SDN:C17::PAH3</skos:notation>
+<skos:prefLabel xml:lang="en">APL Antwerp</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Panama",
+  "platformclass": "vessel of opportunity",
+  "callsign": "3FRT9",
+  "MMSI": "351467000",
+  "IMO": "9532795",
+  "length": "320",
+  "built": "2013",
+  "JCOMMOPs_Recruitment_Date": "2013-08-12",
+  "notes": "Container ships"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/PAH3/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2015-11-10 12:24:35.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/33YK/">
+<dc:identifier>SDN:C17::33YK</dc:identifier>
+<dce:identifier>SDN:C17::33YK</dce:identifier>
+<dc:date>2016-08-08 17:19:42.0</dc:date>
+<skos:notation>SDN:C17::33YK</skos:notation>
+<skos:prefLabel xml:lang="en">APL Belgium</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "vessel of opportunity",
+  "callsign": "WDG8555",
+  "MMSI": "367578740",
+  "IMO": "9218686",
+  "length": "277",
+  "built": "2002",
+  "JCOMMOPs_Recruitment_Date": "2009-08-12",
+  "notes": "Container ships. Built as APL Belgium"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/33YK/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2016-08-08 17:19:42.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/3350/">
+<dc:identifier>SDN:C17::3350</dc:identifier>
+<dce:identifier>SDN:C17::3350</dce:identifier>
+<dc:date>2018-01-22 11:22:40.0</dc:date>
+<skos:notation>SDN:C17::3350</skos:notation>
+<skos:prefLabel xml:lang="en">APL China</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "vessel of opportunity",
+  "callsign": "WDB3161",
+  "MMSI": "369247000",
+  "IMO": "9074389",
+  "commissioned": "1995",
+  "length": "276",
+  "built": "1995",
+  "JCOMMOPs_Recruitment_Date": "2001-10-15",
+  "notes": "Container ships. Built as APL China"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/3350/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 11:22:40.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/SIYG/">
+<dc:identifier>SDN:C17::SIYG</dc:identifier>
+<dce:identifier>SDN:C17::SIYG</dce:identifier>
+<dc:date>2015-11-10 12:24:35.0</dc:date>
+<skos:notation>SDN:C17::SIYG</skos:notation>
+<skos:prefLabel xml:lang="en">APL Chongquing</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Singapore",
+  "platformclass": "vessel of opportunity",
+  "callsign": "9V9373",
+  "MMSI": "566318000",
+  "IMO": "9461867",
+  "built": "2011",
+  "JCOMMOPs_Recruitment_Date": "2012-02-06",
+  "notes": "Container ships"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/SIYG/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2015-11-10 12:24:35.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/33QR/">
+<dc:identifier>SDN:C17::33QR</dc:identifier>
+<dce:identifier>SDN:C17::33QR</dce:identifier>
+<dc:date>2018-01-22 11:22:40.0</dc:date>
+<skos:notation>SDN:C17::33QR</skos:notation>
+<skos:prefLabel xml:lang="en">APL Coral</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "vessel of opportunity",
+  "callsign": "WDF6832",
+  "MMSI": "367478280",
+  "IMO": "9139749",
+  "commissioned": "2011",
+  "length": "262",
+  "built": "1998",
+  "previous_name": "N O L Coral",
+  "JCOMMOPs_Recruitment_Date": "2011-04-14",
+  "notes": "Container ships. Built as N O L CORAL, became APL CORAL in 2001. Previoulsy under Singapore flag but dates not confirmed"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/33QR/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-01-22 11:22:40.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/337P/">
+<dc:identifier>SDN:C17::337P</dc:identifier>
+<dce:identifier>SDN:C17::337P</dce:identifier>
+<dc:date>2018-04-18 10:48:16.0</dc:date>
+<skos:notation>SDN:C17::337P</skos:notation>
+<skos:prefLabel xml:lang="en">APL Cyprine</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "United States",
+  "platformclass": "vessel of opportunity",
+  "callsign": "WDE8293",
+  "MMSI": "367403790",
+  "IMO": "9139725",
+  "commissioned": "2009",
+  "decommissioned": "2016",
+  "length": "275",
+  "built": "1997",
+  "previous_name": "NOL Cyprine",
+  "JCOMMOPs_Recruitment_Date": "2009-05-04",
+  "notes": "Container ships. Built as NOL CYPRINE, became APL CYPRINE in 2000, came under USA flag in 2009, became CYPRUS in 2016. Disposed in 2016"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/337P/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-04-18 10:48:16.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/89AR/">
+<dc:identifier>SDN:C17::89AR</dc:identifier>
+<dce:identifier>SDN:C17::89AR</dce:identifier>
+<dc:date>2011-12-06 13:31:33.0</dc:date>
+<skos:notation>SDN:C17::89AR</skos:notation>
+<skos:prefLabel xml:lang="en">Arar</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "IMO": "5021762",
+  "title": "RV",
+  "country": "Turkey",
+  "platformclass": "research vessel",
+  "callsign": "TC5393",
+  "length": "31",
+  "built": "1951",
+  "notes": "Ocean research vessel operated by Institude of Marine Sciences and Management, Istanbul University."
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/89AR/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2011-12-06 13:31:33.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L19/current/SDNKG04/"/>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/31/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/61GG/">
+<dc:identifier>SDN:C17::61GG</dc:identifier>
+<dce:identifier>SDN:C17::61GG</dce:identifier>
+<dc:date>2018-02-06 09:33:51.0</dc:date>
+<skos:notation>SDN:C17::61GG</skos:notation>
+<skos:prefLabel xml:lang="en">Aratere</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "New Zealand",
+  "platformclass": "vessel of opportunity on fixed route",
+  "callsign": "ZMII",
+  "MMSI": "512071000",
+  "IMO": "9174828",
+  "commissioned": "2003",
+  "length": "150",
+  "built": "1998",
+  "JCOMMOPs_Recruitment_Date": "1999-04-27",
+  "notes": "Ro Ro ferries. Built as ARATERE under Bahamian flag, changed to New Zealand flag but date unsure"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/61GG/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-02-06 09:33:51.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/35/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/SILL/">
+<dc:identifier>SDN:C17::SILL</dc:identifier>
+<dce:identifier>SDN:C17::SILL</dce:identifier>
+<dc:date>2016-08-08 17:19:42.0</dc:date>
+<skos:notation>SDN:C17::SILL</skos:notation>
+<skos:prefLabel xml:lang="en">APL England</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Singapore",
+  "platformclass": "vessel of opportunity",
+  "callsign": "9VDD2",
+  "MMSI": "563722000",
+  "IMO": "9218650",
+  "commissioned": "2001",
+  "length": "263",
+  "built": "2001",
+  "JCOMMOPs_Recruitment_Date": "2007-04-01",
+  "notes": "Container ships. Built as APL England"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/SILL/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2016-08-08 17:19:42.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+<skos:member>
+<skos:Concept rdf:about="http://vocab.nerc.ac.uk/collection/C17/current/SITE/">
+<dc:identifier>SDN:C17::SITE</dc:identifier>
+<dce:identifier>SDN:C17::SITE</dce:identifier>
+<dc:date>2018-03-28 16:51:34.0</dc:date>
+<skos:notation>SDN:C17::SITE</skos:notation>
+<skos:prefLabel xml:lang="en">APL Gwangyang</skos:prefLabel>
+<skos:altLabel/>
+<skos:definition xml:lang="en">{
+  "country": "Singapore",
+  "platformclass": "vessel of opportunity",
+  "callsign": "9V9374",
+  "MMSI": "566319000",
+  "IMO": "9461879",
+  "commissioned": "2011",
+  "length": "349",
+  "built": "2011",
+  "JCOMMOPs_Recruitment_Date": "2013-02-14",
+  "notes": "Container ships. Built as APL GWANGYANG"
+}</skos:definition>
+<owl:versionInfo>1</owl:versionInfo>
+<pav:hasCurrentVersion rdf:resource="http://vocab.nerc.ac.uk/collection/C17/current/SITE/1/"/>
+<pav:version>1</pav:version>
+<pav:authoredOn>2018-03-28 16:51:34.0</pav:authoredOn>
+<skos:note xml:lang="en">accepted</skos:note>
+<owl:deprecated>false</owl:deprecated>
+<skos:broader rdf:resource="http://vocab.nerc.ac.uk/collection/L06/current/32/"/>
+<void:inDataset rdf:resource="http://vocab.nerc.ac.uk/.well-known/void"/>
+</skos:Concept>
+</skos:member>
+</skos:Collection>
+</rdf:RDF>
