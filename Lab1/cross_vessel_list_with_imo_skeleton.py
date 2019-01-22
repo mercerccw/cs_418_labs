@@ -109,6 +109,7 @@ Looking at the relevant test case will give you a better view of the data struct
 import sys
 import os
 import xml.dom.minidom
+from xml.dom.minidom import parse, parseString
 import json
 import unittest
 import csv
@@ -199,7 +200,9 @@ def extract_ship_properties( imo_filename, xml_vessel_filename ):
 	:return: a set of 3-tuples of the form ``(<IMO number>, <ship name>, <ship MMSI>)``.
 	:rtype: set
 	"""
-	pass
+	dictionary = extract_imo(imo_filename)
+	new_set = set()
+	dom1 = parse(xml_vessel_filename)
 			
 			
 def get_text( element ):
