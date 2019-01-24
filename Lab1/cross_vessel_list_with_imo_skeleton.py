@@ -113,10 +113,11 @@ from xml.dom.minidom import parse, parseString
 import json
 import unittest
 import csv
+import xml.etree.ElementTree as ET
 
 
-def extract_imo( imo_filename ):
-	"""
+def extract_imo(imo_filename):
+    """
 	.. _extract_imo:
 
 	Read a list of vessel characteristics, and map the IMO numbers to the MMSIs.
@@ -148,19 +149,17 @@ def extract_imo( imo_filename ):
 	:rtype: dict
 
 	"""
-	directory = {}
-	with open(imo_filename) as csv_file:
-		csv_reader = csv.reader(csv_file, delimiter=',')
-		next(csv_reader, None)
-		for row in csv_reader:
-			directory[row[0]] = row[1]
+    directory = {}
 
-	return directory
-	
+    with open(imo_filename) as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader:
+            directory[row[0]] = row[1]
+    return directory
 
 
-def extract_ship_properties( imo_filename, xml_vessel_filename ):
-	"""
+def extract_ship_properties(imo_filename, xml_vessel_filename):
+    """
 	.. _extract_ship_properties:
 
 	From a list of ship identifiers (first parameter), build a table that associate IMO numbers to MMSIs. Then extract from the XML list of  vessels (second parameter) those ships that have a valid IMO number in the first table, in order to construct a set of vessel tuples.
@@ -200,13 +199,26 @@ def extract_ship_properties( imo_filename, xml_vessel_filename ):
 	:return: a set of 3-tuples of the form ``(<IMO number>, <ship name>, <ship MMSI>)``.
 	:rtype: set
 	"""
-	dictionary = extract_imo(imo_filename)
-	new_set = set()
-	dom1 = parse(xml_vessel_filename)
-			
-			
-def get_text( element ):
-	"""
+    dictionary = extract_imo(imo_filename)
+    new_set = set()
+    dom = xml.dom.minidom.parse(xml_vessel_filename)
+    try:
+        dom = xml.dom.minidom.parse(xml_vessel_filename)
+    except (EnvironmentError, xml.parsers.expat.ExpatError) as err:
+        print(f"{0}: import error: {1}".format(os.path.basename(sys.argv[0]), err))
+    for member in dom.getElementsByTagName("skos:Concept"):
+        vessel_name = get_text(member.getElementsByTagName("skos:prefLabel")[0])
+        # print(vessel_name)
+        # if get_text(member.getElementsByTagName("skos:definition")[0]) != :
+        definition = get_text(member.getElementsByTagName("skos:definition")[0])
+        print(definition)
+        # definition = json.loads(definition)
+
+
+
+
+def get_text(element):
+    """
 	.. _get_text:
 
 	Helper function that extracts, and concatenates the text nodes of a given element, to be returned as a single string.
@@ -217,86 +229,102 @@ def get_text( element ):
 	:return: a concatenation of all textual nodes of the given element.
 	:rtype: str
 	"""
-	text=[]
-	for child in element.childNodes:
-		if child.nodeType == child.TEXT_NODE:
-			text.append( child.data )
-	return "".join( text ).strip()
+    text = []
+    for child in element.childNodes:
+        if child.nodeType == child.TEXT_NODE:
+            text.append(child.data)
+    return "".join(text).strip()
 
 
-class TestExtraction( unittest.TestCase ):
+class TestExtraction(unittest.TestCase):
+    imo_vessel_codes = 'imo-vessel-codes.csv'
+    sample_vessel_database = 'ICES_vessel_sample.xml'
 
-	imo_vessel_codes='imo-vessel-codes.csv'
-	sample_vessel_database='ICES_vessel_sample.xml'
-	#sample_vessel_database='international_council_exploration_seas_vessel_database.xml'
+    # sample_vessel_database='international_council_exploration_seas_vessel_database.xml'
 
-	def test_1_get_text(self):
-		
-		dom = xml.dom.minidom.parseString("""<?xml version="1.0" encoding="UTF-8"?>
+    def test_1_get_text(self):
+        dom = xml.dom.minidom.parseString("""<?xml version="1.0" encoding="UTF-8"?>
 					<bigFish>Moby Dick</bigFish>""")
-		self.assertEqual( get_text( dom.childNodes[0] ), 'Moby Dick')
+        self.assertEqual(get_text(dom.childNodes[0]), 'Moby Dick')
 
+    def test_2_extract_imo_length(self):
+        """ Test that all imo numbers have been stored """
+        valid_imos = extract_imo(self.imo_vessel_codes)
 
-	def test_2_extract_imo_length(self):
-		""" Test that all imo numbers have been stored """
-		valid_imos = extract_imo( self.imo_vessel_codes )
+        self.assertEqual(len(valid_imos.items()), 58666)
 
-		self.assertEqual( len( valid_imos.items()), 58666)
-	
-	def test_3_extract_imo_pairs(self):
-		""" Test that the mapping is correct (2 random pairs)"""
-		
-		valid_imos = extract_imo( self.imo_vessel_codes )
+    def test_3_extract_imo_pairs(self):
+        """ Test that the mapping is correct (2 random pairs)"""
 
-		self.assertEqual( valid_imos['9315513'], '366947110' )
-		self.assertEqual( valid_imos['9081174'], '351667000' )
+        valid_imos = extract_imo(self.imo_vessel_codes)
 
-		
-	def test_4_extract_ship_properties_is_set(self):
-		""" Test that ship extraction returns a set """
+        self.assertEqual(valid_imos['9315513'], '366947110')
+        self.assertEqual(valid_imos['9081174'], '351667000')
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
-		self.assertEqual( type(ship_properties), set)
+    def test_4_extract_ship_properties_is_set(self):
+        """ Test that ship extraction returns a set """
 
-	def test_5_extract_ship_properties_is_set_of_tuples(self):
-		""" Test that ship extraction returns a set of tuples """
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
+        self.assertEqual(type(ship_properties), set)
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
-		self.assertTrue ( type(ship) is tuple for ship in ship_properties )
+    def test_5_extract_ship_properties_is_set_of_tuples(self):
+        """ Test that ship extraction returns a set of tuples """
 
-	def test_6_extract_ship_properties_is_set_of_3_tuples(self):
-		""" Test that ship extraction returns a set of 3-tuples """
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
+        self.assertTrue(type(ship) is tuple for ship in ship_properties)
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
-		self.assertTrue ( type(ship) is tuple and len(ship)==3 for ship in ship_properties )
+    def test_6_extract_ship_properties_is_set_of_3_tuples(self):
+        """ Test that ship extraction returns a set of 3-tuples """
 
-	def test_7_extract_ship_properties_numbers(self):
-		""" Test that all ship IMO numbers have been extracted, as first element of every 3-tuple in the set"""
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
+        self.assertTrue(type(ship) is tuple and len(ship) == 3 for ship in ship_properties)
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
+    def test_7_extract_ship_properties_numbers(self):
+        """ Test that all ship IMO numbers have been extracted, as first element of every 3-tuple in the set"""
 
-		self.assertEqual( set([ ship[0] for ship in ship_properties ]), set(['9324863', '9139749', '9155391', '9593488', '9324837', '9334820', '9532795', '9334155', '9214898', '9326794', '9324849', '9334167', '6711883', '9218650', '9225407', '9218686', '9139713', '9139725', '9461879', '8219384', '9461867', '9074389']))
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
 
-	def test_8_extract_ship_properties_numbers_names(self):
-		""" Test that ship IMO numbers and ship name have been extracted, as first, second elements of every 3-tuple in the set"""
+        self.assertEqual(set([ship[0] for ship in ship_properties]), set(
+            ['9324863', '9139749', '9155391', '9593488', '9324837', '9334820', '9532795', '9334155', '9214898',
+             '9326794', '9324849', '9334167', '6711883', '9218650', '9225407', '9218686', '9139713', '9139725',
+             '9461879', '8219384', '9461867', '9074389']))
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
+    def test_8_extract_ship_properties_numbers_names(self):
+        """ Test that ship IMO numbers and ship name have been extracted, as first, second elements of every 3-tuple in the set"""
 
-		self.assertEqual( set([ (ship[0], ship[1]) for ship in ship_properties ]), set([('9324863', 'ANL Warrain'), ('9139749', 'APL Coral'), ('9155391', 'ANL Echuca'), ('9593488', 'AM Tubarao'), ('9324837', 'ANL Warringa'), ('9334820', 'ANL Elanora'), ('9532795', 'APL Antwerp'), ('9334155', 'ANL Wyong'), ('9214898', 'A. P. Moller'), ('9326794', 'ANL Waratah'), ('9324849', 'ANL Windarra'), ('9334167', 'ANL Wangaratta'), ('6711883', 'A. V. Humboldt'), ('9218650', 'APL England'), ('9225407', 'ANL Kiewa'), ('9218686', 'APL Belgium'), ('9139713', 'APL Agate'), ('9139725', 'APL Cyprine'), ('9461879', 'APL Gwangyang'), ('8219384', '2nd Lt. John P.Bobo'), ('9461867', 'APL Chongquing'), ('9074389', 'APL China')]))
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
 
-	def test_9_extract_ship_properties_numbers_names_mmsi(self):
-		""" Test that ship IMO numbers, ship name, and MMSI have been extracted, as 3-tuple elements of the set"""
+        self.assertEqual(set([(ship[0], ship[1]) for ship in ship_properties]), set(
+            [('9324863', 'ANL Warrain'), ('9139749', 'APL Coral'), ('9155391', 'ANL Echuca'), ('9593488', 'AM Tubarao'),
+             ('9324837', 'ANL Warringa'), ('9334820', 'ANL Elanora'), ('9532795', 'APL Antwerp'),
+             ('9334155', 'ANL Wyong'), ('9214898', 'A. P. Moller'), ('9326794', 'ANL Waratah'),
+             ('9324849', 'ANL Windarra'), ('9334167', 'ANL Wangaratta'), ('6711883', 'A. V. Humboldt'),
+             ('9218650', 'APL England'), ('9225407', 'ANL Kiewa'), ('9218686', 'APL Belgium'), ('9139713', 'APL Agate'),
+             ('9139725', 'APL Cyprine'), ('9461879', 'APL Gwangyang'), ('8219384', '2nd Lt. John P.Bobo'),
+             ('9461867', 'APL Chongquing'), ('9074389', 'APL China')]))
 
-		ship_properties = extract_ship_properties( 'imo-vessel-codes.csv', self.sample_vessel_database )
+    def test_9_extract_ship_properties_numbers_names_mmsi(self):
+        """ Test that ship IMO numbers, ship name, and MMSI have been extracted, as 3-tuple elements of the set"""
 
-		self.assertEqual( ship_properties, {('9324863', 'ANL Warrain', '565997000'), ('9139749', 'APL Coral', '367478280'), ('9155391', 'ANL Echuca', '636090756'), ('9593488', 'AM Tubarao', '636015171'), ('9324837', 'ANL Warringa', '538002734'), ('9334820', 'ANL Elanora', '636091287'), ('9532795', 'APL Antwerp', '351467000'), ('9334155', 'ANL Wyong', '235060306'), ('9214898', 'A. P. Moller', '219882000'), ('9326794', 'ANL Waratah', '636091052'), ('9324849', 'ANL Windarra', '538002733'), ('9334167', 'ANL Wangaratta', '235060679'), ('6711883', 'A. V. Humboldt', '376404000'), ('9218650', 'APL England', '563722000'), ('9225407', 'ANL Kiewa', '636092575'), ('9218686', 'APL Belgium', '367578740'), ('9139713', 'APL Agate', '367403460'), ('9139725', 'APL Cyprine', '367403790'), ('9461879', 'APL Gwangyang', '566319000'), ('8219384', '2nd Lt. John P.Bobo', '367049000'), ('9461867', 'APL Chongquing', '566318000'), ('9074389', 'APL China', '369247000')})
+        ship_properties = extract_ship_properties('imo-vessel-codes.csv', self.sample_vessel_database)
 
+        self.assertEqual(ship_properties,
+                         {('9324863', 'ANL Warrain', '565997000'), ('9139749', 'APL Coral', '367478280'),
+                          ('9155391', 'ANL Echuca', '636090756'), ('9593488', 'AM Tubarao', '636015171'),
+                          ('9324837', 'ANL Warringa', '538002734'), ('9334820', 'ANL Elanora', '636091287'),
+                          ('9532795', 'APL Antwerp', '351467000'), ('9334155', 'ANL Wyong', '235060306'),
+                          ('9214898', 'A. P. Moller', '219882000'), ('9326794', 'ANL Waratah', '636091052'),
+                          ('9324849', 'ANL Windarra', '538002733'), ('9334167', 'ANL Wangaratta', '235060679'),
+                          ('6711883', 'A. V. Humboldt', '376404000'), ('9218650', 'APL England', '563722000'),
+                          ('9225407', 'ANL Kiewa', '636092575'), ('9218686', 'APL Belgium', '367578740'),
+                          ('9139713', 'APL Agate', '367403460'), ('9139725', 'APL Cyprine', '367403790'),
+                          ('9461879', 'APL Gwangyang', '566319000'), ('8219384', '2nd Lt. John P.Bobo', '367049000'),
+                          ('9461867', 'APL Chongquing', '566318000'), ('9074389', 'APL China', '369247000')})
 
 
 def main():
-        unittest.main()
+    unittest.main()
+
 
 if __name__ == '__main__':
-        main()
-
-
+    main()
