@@ -155,6 +155,7 @@ def extract_imo(imo_filename):
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader:
             directory[row[0]] = row[1]
+
     return directory
 
 
@@ -200,7 +201,7 @@ def extract_ship_properties(imo_filename, xml_vessel_filename):
 	:rtype: set
 	"""
     dictionary = extract_imo(imo_filename)
-    new_set = set()
+    boat_set = set()
     dom = xml.dom.minidom.parse(xml_vessel_filename)
     try:
         dom = xml.dom.minidom.parse(xml_vessel_filename)
@@ -208,13 +209,16 @@ def extract_ship_properties(imo_filename, xml_vessel_filename):
         print(f"{0}: import error: {1}".format(os.path.basename(sys.argv[0]), err))
     for member in dom.getElementsByTagName("skos:Concept"):
         vessel_name = get_text(member.getElementsByTagName("skos:prefLabel")[0])
-        # print(vessel_name)
-        # if get_text(member.getElementsByTagName("skos:definition")[0]) != :
         definition = get_text(member.getElementsByTagName("skos:definition")[0])
-        print(definition)
-        # definition = json.loads(definition)
+        try:
+            boat = json.loads(definition)
+            if boat['IMO'] in dictionary.keys():
+                ship = (boat['IMO'], vessel_name, dictionary[boat['IMO']])
+                boat_set.add(ship)
 
-
+        except:
+            x = 0
+    return boat_set
 
 
 def get_text(element):
